@@ -5,6 +5,8 @@
 - MongoDB
 - Tailwind CSS
 
+[Live Demo](https://y-nicktjs.vercel.app)
+
 Data architecture is heavily referenced from the MongoDB Team's [Socialite](https://github.com/mongodb-labs/socialite/tree/master). The application uses the "fan out on write" approach when making changes that would be seen by many users, eg: posting a tweet and having it reflect in your followers' timelines.
 
 Any changes that involve more than one user's timeline are handled by MongoDB Atlas' Triggers, which run on a serverless compute layer. 
